@@ -6,6 +6,11 @@ import SidebarChannel from './SidebarChannel';
 import SignalCellularAltIcon from '@material-ui/icons/SignalCellularAlt';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
 import CallIcon from '@material-ui/icons/Call';
+import { Avatar } from '@material-ui/core';
+import MicIcon from '@material-ui/icons/Mic';
+import HeadsetIcon from '@material-ui/icons/Headset';
+import SettingsIcon from '@material-ui/icons/Settings';
+
 function Sidebar() {
     return (
         <div className="sidebar">
@@ -40,6 +45,20 @@ function Sidebar() {
                 <div className="sidebar__voiceIcons">
                     <InfoOutlinedIcon />
                     <CallIcon />
+                </div>
+            </div>
+            <div className="sidebar__profile">
+                <Avatar
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB0X3bnHBeQ8suX0gEG_ZniFzLrBBL0jHWCQ&usqp=CAU"
+                />
+                <div className="sidebar__profileInfo">
+                    <h3>Mike Torres</h3>
+                    <p>#C5QFn</p>
+                </div>
+                <div className="sidebar__profileIcons">
+                    <MicIcon />
+                    <HeadsetIcon />
+                    <SettingsIcon />
                 </div>
             </div>
         </div>
