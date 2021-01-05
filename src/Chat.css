@@ -41,7 +41,15 @@
 }
 
 .chat__messages {
-    /* display: flex;
-    flex-direction: column; */
     flex: 1;
+    overflow: scroll;   
+}
+
+.chat__messages::-webkit-scrollbar {
+    display: none;
+}
+
+.chat__messages {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
